@@ -7,10 +7,12 @@ const Character = ({
   species,
   image 
 }) => (
-  <h2>{name}</h2>
-  <h4>{status}</h4>
-  <h3>{species</h3>
-  <img src={image} alt={name} />
+  <>
+    <h2>{name}</h2>
+    <h4>{status}</h4>
+    <h3>{species}</h3>
+    <img src={image} alt={name} />
+  </>
 );
 
 Character.propTypes = {
