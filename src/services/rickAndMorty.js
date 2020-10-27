@@ -5,7 +5,8 @@ export const getAllCharacters = () => {
       name: character.name,
       status: character.status,
       species: character.species,
-      image: character.image
+      image: character.image,
+      id: character.id
 
     })));
 };
@@ -13,6 +14,6 @@ export const getAllCharacters = () => {
 
 export const getSingleCharacter = id => {
   return fetch(`https://rickandmortyapi.com/api/character/${id}`)
-    .then(res => res.jsonS());
+    .then(res => res.json());
 };
 
