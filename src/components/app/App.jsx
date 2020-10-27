@@ -6,10 +6,12 @@ import {
   Switch, 
 } from 'react-router-dom';
 import CharacterDetail from '../../container/CharacterDetail';
+import Header from '../Header/Header';
 
 export default function App() {
   return (
     <Router>
+      <Header/>
       <Switch>
         <Route exact path="/" component={Container}/>
         <Route exact path="/detail/:id" component={CharacterDetail}/>
