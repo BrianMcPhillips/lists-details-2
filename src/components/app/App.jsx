@@ -11,8 +11,8 @@ import Header from '../Header/Header';
 export default function App() {
   return (
     <Router>
+      <Header/>
       <Switch>
-        <Header/>
         <Route exact path="/" component={Container}/>
         <Route exact path="/detail/:id" component={CharacterDetail}/>
       </Switch>
