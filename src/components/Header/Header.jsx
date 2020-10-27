@@ -6,7 +6,7 @@ export default function Header() {
     <>
       <h1>Rick and Morty Characters</h1>
       <Link to = "/">
-        <span>Back to List</span>
+        <span>Home</span>
       </Link>
     </>
   );
