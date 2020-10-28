@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import Container from './Container';
 import { getAllCharacters } from '../services/rickAndMorty';
+import { MemoryRouter } from 'react-router-dom';
 
 jest.mock('../services/rickAndMorty.js');
 
@@ -21,7 +22,11 @@ describe('Main list container', () => {
         image: 'https://www.placecage.com/200/200'
       }
     ]);
-    render(<Container />);
+    render(
+      <MemoryRouter> 
+        <Container /> 
+      </MemoryRouter>
+    );
 
     const characters = await screen.findByTestId('characters');
     return waitFor(() => {
