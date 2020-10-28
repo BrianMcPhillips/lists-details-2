@@ -12,5 +12,8 @@ exports[`App component renders App 1`] = `
       Home
     </span>
   </a>
+  <ul
+    data-testid="characters"
+  />
 </DocumentFragment>
 `;

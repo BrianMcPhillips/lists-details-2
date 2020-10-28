@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterList component should render characters to page 1`] = `
+<DocumentFragment>
+  <ul
+    data-testid="characters"
+  >
+    <li>
+      <a
+        href="/detail/undefined"
+      >
+        <h2>
+          Test 1
+        </h2>
+        <img
+          alt="Test 1"
+          src="http://www.placecage.com/200/200"
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        href="/detail/undefined"
+      >
+        <h2>
+          Test 2
+        </h2>
+        <img
+          alt="Test 2"
+          src="http://www.placecage.com/300/300"
+        />
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

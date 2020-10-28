@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Character from '../components/Characters/Character';
+import CharacterDetail from '../components/Characters/CharacterDetail';
 import { getSingleCharacter } from '../services/rickAndMorty';
 
-const CharacterDetail = () => {
+const CharacterDetailPage = () => {
   const [character, setCharacter] = useState([]);
 
   const { id } = useParams();
@@ -12,8 +12,10 @@ const CharacterDetail = () => {
       .then(character => setCharacter(character));
   }, []);
   return (
-    <Character {...character} />
+    <div data-testid="detail">
+      <CharacterDetail {...character} />
+    </div>
   );
 };
 
-export default CharacterDetail;
+export default CharacterDetailPage;
